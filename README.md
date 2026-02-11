@@ -1,130 +1,44 @@
-# Customer Churn Analysis -Dashboard
-Customer Churn Analysis 
+# Customer Churn Analysis 
 
-Project Overview
+## Project Overview
 
-Customer churn is one of the biggest challenges in the telecom industry. This project analyzes telecom customer data to identify why customers leave, which segments are at risk, and how businesses can reduce churn.
+This project provides a comprehensive analysis of customer churn for a telecommunications company. By leveraging **SQL** for data processing and **Power BI** for visualization, the project identifies key factors contributing to customer attrition and provides actionable insights to improve retention rates.
 
-Using SQL for data cleaning & analysis and Power BI for visualization, I built an interactive dashboard that provides actionable business insights to improve customer retention.
+## Dataset
 
-Business Objective
+The analysis is based on a telecom customer database containing **6,000 customers**, covering:
 
-Identify key factors causing customer churn
+* **Demographics:** Gender, age groups, and marital status.
+* **Account Info:** Payment methods, contract types, and tenure.
+* **Services:** Internet types (Fiber Optic, Cable, DSL) and additional services like streaming and security.
+* **Churn Data:** Churn categories (Competitor, Attitude, Dissatisfaction, Price) and specific churn reasons.
 
-Measure churn rate across demographics, services, and contracts
+## Key Insights from Dashboard
 
-Detect high-risk customer segments
+* **Churn Rate:** The overall churn rate stands at **26.99%**, with 1,732 customers leaving.
+* **High-Risk Demographics:** Customers aged **>50** show a significantly higher churn rate compared to younger demographics.
+* **Service Impact:** **Fiber Optic** users have the highest churn rate compared to Cable or DSL users, suggesting potential service quality or pricing issues in that segment.
+* **Contract Types:** Month-to-month contracts have a drastically higher churn rate than one or two-year contracts.
+* **Top Churn Reason:** The "Competitor" category is the leading driver of churn, followed by "Attitude" and "Dissatisfaction."
 
-Provide data-driven recommendations to reduce churn
+## Tech Stack
 
-Tech Stack
+* **Data Processing:** SQL (Data cleaning, joining tables, and aggregating metrics)
+* **Visualization:** Power BI (DAX for measures, interactive filtering, and dashboard design)
 
-SQL (MySQL/SQL Server/PostgreSQL) - Data cleaning & transformation
+## Project Structure
 
-Power BI - Dashboard & visualization
+* `Analysis_Queries.sql`: Contains the SQL scripts used to extract and transform data.
+* `Churn_Dashboard.pbix`: The Power BI file containing the interactive report.
+* `Screenshots/`: Visual representation of the final dashboard.
 
-Excel/CSV - Dataset
+## How to Use
 
-GitHub - Version control
+1. **SQL:** Run the scripts in the `Analysis_Queries.sql` file on your SQL environment to see how the metrics were calculated.
+2. **Power BI:** Open the `.pbix` file to interact with the dashboard. Use the filters for **Monthly Charge Range** and **Married** status to deep-dive into specific segments.
 
-Key Metrics
+---
 
+### Dashboard Preview
 
-Total Customers: 6,000+
-
-New Joiners: 411
-
-Total Churn: 1,732
-
-Churn Rate: 26.99%
- 
-Analysis
-
-Demographics
-
-Higher churn observed in specific age groups (>35)
-
-Gender distribution shows slight variation in churn rate
-
-Services Used
-
-
-Customers with Fiber Optic Internet show higher churn
-
-Lack of value-added services increases churn risk
-
-
-Contract Type
-
-
-Monthly contracts - highest churn
-
-Long-term contracts - lower churn
-
-Payment Method
-
-Mailed check customers churn more compared to online payments
-
-Tenure
-
-New customers (< 6 months) churn more frequently
-
- 
-Power BI Features
-
-KPI cards (Customers, Churn, Churn Rate)
-
-Interactive filters/slicers
-
-Churn by:
-
-
-Age group
-
-Gender
-
-State
-
-Services
-
-Tenure
-
-Contract
-
-Dynamic drill-down visuals
-
-Clean and business-friendly design
-
-
-Business Recommendations
-
-Promote yearly/long-term contracts
-
-Offer loyalty discounts for new customers
-
-Improve Fiber Optic service quality
-
-Bundle value-added services
-
-Encourage digital payments
-
-
-How to Run
-
-SQL
-
-Import dataset into SQL database
-
-Run queries from churn.sql
-
-Power BI
-
-Open dashboard.pbix
-
-Refresh dataset
-
-Explore visuals
-
-Author
-
-Charann Kumar Reddy Lakku
+---
