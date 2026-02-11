@@ -40,5 +40,6 @@ The analysis is based on a telecom customer database containing **6,000 customer
 ---
 
 ### Dashboard Preview
+<img width="1140" height="653" alt="Churn Dashboard" src="https://github.com/user-attachments/assets/f9b70257-af8f-4bdd-a7a8-c6ba926c2b7d" />
 
 ---
